@@ -70,3 +70,83 @@ else:
 
 
 ```
+
+
+## Central Limit Theorem (CLT)
+
+The **Central Limit Theorem (CLT)** is a fundamental principle in statistics that states that, given a sufficiently large sample size, the sampling distribution of the sample mean will approach a normal distribution, regardless of the shape of the original population distribution. This is crucial for inferential statistics, allowing us to make predictions about population parameters based on sample data.
+
+### Why is Central Limit Theorem Important?
+
+- **Normality of Sample Means**: The CLT allows us to assume that the distribution of the sample means will be approximately normal, even if the original data is not. This normality is important for making confidence intervals and hypothesis tests.
+  
+- **Sample Size Consideration**: The larger the sample size, the closer the sample mean distribution will be to a normal distribution. For most data, a sample size of 30 or more is generally sufficient.
+
+- **Practical Applications**: The CLT is used in many areas of data science, especially in A/B testing, hypothesis testing, and confidence intervals. It helps when dealing with unknown population distributions by relying on the sample means.
+
+### Example in Python:
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Generating a non-normal population distribution
+population = np.random.exponential(scale=2, size=1000)
+
+# Function to calculate the means of random samples
+def sample_me
+
+```
+
+
+
+## Hypothesis Testing
+
+**Hypothesis Testing** is a statistical method used to determine whether there is enough evidence in a sample of data to infer that a certain condition holds true for the entire population. It is a key process in statistical inference and decision-making.
+
+### Definitions
+
+- **Null Hypothesis (H₀)**: The null hypothesis is a statement of no effect or no difference. It serves as the default assumption that there is no significant effect or relationship between variables. It is the hypothesis that researchers aim to test against.
+
+- **Alternative Hypothesis (H₁ or Ha)**: The alternative hypothesis is a statement that contradicts the null hypothesis. It proposes that there is a significant effect or difference. It is what researchers aim to support with evidence.
+
+### Importance in Data Science
+
+- **Decision-Making**: Hypothesis testing helps in making data-driven decisions by providing a structured method to test assumptions and claims. It is crucial for validating models, algorithms, and business strategies.
+
+- **Model Evaluation**: In machine learning, hypothesis testing is used to evaluate the performance of models, such as comparing the effectiveness of different algorithms or determining if the observed performance metrics are statistically significant.
+
+- **A/B Testing**: Used in A/B testing to compare two or more versions of a web page, product, or feature to determine which one performs better based on statistical evidence.
+
+### Example in Python:
+
+Here’s an example using Python to perform a hypothesis test with a sample dataset:
+
+```python
+from scipy import stats
+import numpy as np
+
+# Sample data
+data_before = np.array([20, 22, 19, 24, 30, 29, 25, 23, 27, 28])
+data_after = np.array([25, 27, 24, 28, 35, 33, 30, 29, 32, 31])
+
+# Null Hypothesis (H₀): There is no difference in means between the two groups.
+# Alternative Hypothesis (H₁): There is a significant difference in means between the two groups.
+
+# Perform a t-test
+t_stat, p_value = stats.ttest_ind(data_before, data_after)
+
+print(f"T-statistic: {t_stat}")
+print(f"P-value: {p_value}")
+
+# Interpret the result
+alpha = 0.05  # significance level
+if p_value < alpha:
+    print("Reject the null hypothesis: There is a significant difference between the two groups.")
+else:
+    print("Fail to reject the null hypothesis: There is no significant difference between the two groups.")
+
+
+```
+
+
