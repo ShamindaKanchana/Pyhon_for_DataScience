@@ -162,3 +162,29 @@ Old design data=[45.2,42.8,38.9,43.5,41.0,44.6,40.5,42.7,39.8,41.4,44.3,39.7,42.
 New Design data=[48.5,49.1,50.2,47.8,48.7,49.9,48.0,50.5,49.8,49.6,48.2,48.9,49.7,50.3,49.4,50.1,48.6,48.3,49.0,50.0,48.4,49.3,49.5,48.8,50.6,50.4,48.1,49.2,50.7,50.8]
 
 Population std=2.5
+
+### Hypothesis testing (T test)
+
+### Example 01
+A manufacturer claims that the avrage weight of potato chips is 150 grams. A sample of 25 bags is taken, and the average weight is found to be 148 grams, with a standard deviation of 5 grams. Test the manufacturers claim using a one-tailed test with a significance level of 0.05
+
+### Example 02
+A company wants to test whether a new training program improves the typing speed of its employees. The typing speed of 20 employees was recorded before and after the training program. The data is given below. Test at 5% level of significance whether the training program has an effect on the typing speed of the employees. 
+
+Before=[50,60,45,65,55,70,40,75,80,65,70,60,50,55,45,75,60,50,65,70]
+After=[60,70,55,75,65,80,50,85,90,70,75,65,55,60,50,80,65,55,70,75]
+
+
+### Hypothesis testing (CHI SQR TEST)
+
+### Example01
+A study was conducted to investigate whether there is a relationship between gender and the preferred genre of music. A sample of 235 people was selected and the data collected is shown below. Test at 5% level of sign9ificance whether there is signinficance association between gender and music preference. 
+
+|        | Pop | Hip hop  | Classical  | Rock   |
+|------------|------------|------------|------------|------------|
+| Male   | 40  | 45  | 25   | 10   |
+| Female | 35  | 30  | 20   | 30   |
+
+
+df=(row-1)(columns-1)=3
+alfa=.05
