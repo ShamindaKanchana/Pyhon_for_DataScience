@@ -188,3 +188,13 @@ A study was conducted to investigate whether there is a relationship between gen
 
 df=(row-1)(columns-1)=3
 alfa=.05
+
+
+## Data Preprocessing 
+
+### Removing outliers
+
+#### Z score method 
+
+
+#### IQR method 
